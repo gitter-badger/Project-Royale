@@ -39,6 +39,6 @@ ArminKaric - Lead-Programmer
   global.clear();
   ``` - Clears 75 system.out lines.
 
- ##License
-Project Royale is protected under the GNU General Public License (GNU GPLv3). The GNU GPLv3 is a license that requires anyone who distributes my code to make the the source available under the same terms. More infomation in the LICENSE file.
+##License
+  Project Royale is protected under the GNU General Public License (GNU GPLv3). The GNU GPLv3 is a license that requires anyone who distributes my code to make the the source available under the same terms. More infomation in the LICENSE file.
 
