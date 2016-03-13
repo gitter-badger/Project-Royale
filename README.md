@@ -1,5 +1,6 @@
 # Project-Royale
-  Project Royale is aimed to create tool's to help your Clash Royale Experience. It helps you get the best out of your time and money while playing the popular game created by SUPERCELL called Clash Royale!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Royale is aimed to create tool's to help your Clash Royale Experience. It helps you get the best out of your time and
+money while playing the popular game created by SUPERCELL called Clash Royale!
 ##Features
 + Simple Chest Prediction
 *(More info in the* **Wiki**)
@@ -8,7 +9,7 @@
 + Need help from the **community** for more ideas!
 
 ##Manual Installation
-  In order to run Project-Royal (P-R) the code must be exported as a runnable jar file (**Note** Main_output(1) for launch configuration!), then copy, paste, and fill in the path in a text editor (Notepad, etc.) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to run Project-Royal (P-R) the code must be exported as a runnable jar file (**Note** Main_output(1) for launch configuration!), then copy, paste, and fill in the path in a text editor (Notepad, etc.) 
     ```
     @ECHO OFF
      java -jar "Path/To/The/Jar/Whatever.jar"
@@ -35,9 +36,10 @@
 + ```
   global.clear();
   ``` - Clears 75 system.out lines.
+
 ##Contributors
-- ArminKaric - Lead-Programmer
+  - ArminKaric - Lead-Programmer
 
 ##License
-  Project Royale is protected under the GNU General Public License (GNU GPLv3). The GNU GPLv3 is a license that requires anyone who distributes my code to make the the source available under the same terms. More infomation in the LICENSE file.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Royale is protected under the GNU General Public License (GNU GPLv3). The GNU GPLv3 is a license that requires anyone who distributes my code to make the the source available under the same terms. More infomation in the LICENSE file.
 
