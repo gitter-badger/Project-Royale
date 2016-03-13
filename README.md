@@ -6,9 +6,6 @@
 + Advanced Chest Prediction
 *(More info in the* **Wiki**)
 + Need help from the **community** for more ideas!
-  
-##Contributors
-ArminKaric - Lead-Programmer
 
 ##Manual Installation
   In order to run Project-Royal (P-R) the code must be exported as a runnable jar file (**Note** Main_output(1) for launch configuration!), then copy, paste, and fill in the path in a text editor (Notepad, etc.) 
@@ -38,6 +35,8 @@ ArminKaric - Lead-Programmer
 + ```
   global.clear();
   ``` - Clears 75 system.out lines.
+##Contributors
+- ArminKaric - Lead-Programmer
 
 ##License
   Project Royale is protected under the GNU General Public License (GNU GPLv3). The GNU GPLv3 is a license that requires anyone who distributes my code to make the the source available under the same terms. More infomation in the LICENSE file.
