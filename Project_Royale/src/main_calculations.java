@@ -1,7 +1,8 @@
 import java.lang.reflect.Array;
 
 public class main_calculations {
-public String[] royalpattern = {"Null"
+public String[] chestindex = {
+		"Null",
 		"Silver",
 		"Silver",
 		"Gold",
