@@ -1,6 +1,6 @@
 #TODO
 + ~~ Create menu.~~
- +~~ Create basic chest prediction.~~
++~~ Create basic chest prediction.~~
 + * Create advanced chest prediction.**
 + Create a handler for saving/loading files.
 +** Clean code up.**
