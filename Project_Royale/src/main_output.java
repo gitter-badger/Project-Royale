@@ -1,13 +1,17 @@
 import java.util.Scanner;
 
 public class main_output {
-//Methods
-	//Menu
+//Int's 
 	private static int i;
 	public static int n;
+//Easy Recall 
+static main_calculations main = new main_calculations();
 
 
+	//Methods
+		//Menu
 	public static void main_menu(){
+		
 		//Selection
 		System.out.println("Project Royale");
 		System.out.println();
@@ -51,20 +55,26 @@ public class main_output {
 		System.out.println("Have you played a game W/O an open chest slot?");
 		System.out.println("Y/N:");
 		Scanner r = new Scanner(System.in);
-		String x = r.next();
+		int x = r.nextInt();
 		
 		//Y/N Awnser Decision
-		if(x == "Y" || x == "y"){
+			//Yes
+		if(x == 1){
 			System.exit(0);
+		}
+			//No
+		if(x == 0){
+			main.chestprediction();
 		}
 		
 		
 	}
 
 
+	
+	//initialization of methods 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-			//Init Methods
 				main_menu();
 	}
 
