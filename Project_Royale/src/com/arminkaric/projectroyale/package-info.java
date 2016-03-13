@@ -1,14 +1,14 @@
 /**
  * Copyright Armin Karic 2016
  * 
- * Version Formatting
- * MAJOR.MINOR.PATCH
- * MAJOR version when you make incompatible API changes,
- * MINOR version when you add functionality in a backwards-compatible manner, and
- * PATCH version when you make backwards-compatible bug fixes.
+ * Project Royale is aimed to create tool's to help your Clash Royale Experience.
+ * It helps you get the best out of your time and money while playing the popular
+ * game created by SUPERCELL called Clash Royale!
+ * 
  */
 /**
  * @author arminkaric
+ * MAJOR.MINOR.PATCH
  * @version 1.9.2
  */
 package com.arminkaric.projectroyale;
