@@ -1,5 +1,10 @@
 # Project-Royale
-Tool's created to help your Clash Royale Experience.
+  Project Royale is aimed to create tool's to help your Clash Royale Experience. It helps you get the best out of your time and money while playing the popular game created by SUPERCELL called Clash Royale!
+##Features
++ Simple Chest Prediction
+*(More info in the* **Wiki**)
++ Advanced Chest Prediction
+*(More info in the* **Wiki**)
++ Need help from the **community** for more ideas!
 
-- Chest Prediction, This helps you plot out your progress and know when to spend your gems!
-- 
+
