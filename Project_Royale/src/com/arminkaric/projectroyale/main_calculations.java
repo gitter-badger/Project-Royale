@@ -1,10 +1,19 @@
+/**
+ * Class calculates, and makes predictions about upcoming chests.
+ */
 package com.arminkaric.projectroyale;
+
+/**
+ * @author arminkaric
+ *
+ */
 import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class main_calculations {
 	int h = 0;
 	main_output main = new main_output();
+	global g = new global();
 	
 public String[] chestindex = {
 		"NULL",
@@ -251,21 +260,16 @@ public String[] chestindex = {
 		//240 Chest Total
 	};
 
-
-
 //Prediction Functions
-	//Calibrate
+	//Calibrates the system if chests have been skipped
 		public void ifchestchestskipped(){
 			
 		}
 	
 	//No skipped Chest
 	 public void chestprediction () throws InterruptedException{
-		 int i = 0;
-			while(i  != 75){
-				System.out.println();i++;
-				}
-		 	//Win Input
+		 g.clear();
+			//Win Input
 		System.out.println("Current Wins:");
 		Scanner r = new Scanner(System.in);
 		int w = r.nextInt();
@@ -315,10 +319,7 @@ public String[] chestindex = {
 			if(h == 2)
 				main.chstpre();
 			if(h == 3){
-				int i1 = 0;
-				while(i1  != 75){
-					System.out.println();i1++;
-					}
+				g.clear();
 				//Confirmation
 		System.out.println("Are you SURE you typed the correct amount of wins? (You Typed: " + w +")");
 		Scanner r11 = new Scanner(System.in);
@@ -351,6 +352,7 @@ public String[] chestindex = {
 					if( h == 4 ){
 						System.out.println("Please calibrate the system.");
 						Thread.sleep(3000);
+						//ifchestskipped();
 							System.exit(0);
 					}
 						

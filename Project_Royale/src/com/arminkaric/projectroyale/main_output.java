@@ -1,18 +1,25 @@
+/**
+ * Class handles the Main menu, and directs the user.
+ */
 package com.arminkaric.projectroyale;
-import java.util.Scanner;
 
+/**
+ * @author arminkaric
+ *
+ */
+import java.util.Scanner;
+import com.arminkaric.projectroyale.global;
 public class main_output {
-//Int's 
 	private static int i;
 	public static int n;
-//Easy Recall 
 static main_calculations main = new main_calculations();
+static global g = new global();
 
 
-	//Methods
+	//Functions
 		//Menu
 	public static void main_menu() throws InterruptedException{
-		
+		g.clear();
 		//Selection
 		System.out.println("Project Royale");
 		System.out.println();
@@ -21,9 +28,7 @@ static main_calculations main = new main_calculations();
 		Scanner s = new Scanner(System.in);
 			System.out.println("Pick a Number:");
 		int n = s.nextInt();
-		while(i != 70){
-			System.out.println();i++;
-			}
+		g.clear();
 		//Redirect Chest Prediction
 		if(n == 1){
 			chstpre();
@@ -35,12 +40,9 @@ static main_calculations main = new main_calculations();
 	}
 	
 	
-	//Director
-	public static void main_director() throws InterruptedException{
-		//Clear
-	while(i != 75){
-		System.out.println();i++;
-		}
+	//Directs User
+	public static void main_direct() throws InterruptedException{
+		g.clear();
 	//Redirect Chest Prediction
 	if(n == 1){
 		chstpre();
@@ -53,21 +55,17 @@ static main_calculations main = new main_calculations();
 	
 	public static void chstpre() throws InterruptedException {
 		// TODO Auto-generated method stub
-			//Clear
-		while(i != 75){
-			System.out.println();i++;
-			}
+		g.clear();
 		System.out.println("Have you skipped a chest?");
 		Scanner r = new Scanner(System.in);
 		System.out.println("Y/N:");
 		String x = r.next();
 		
-		//Y/N Awnser Decision
-			//Yes
 		if(x.equals("Y") || x.equals("y")){
+			//Placeholder
 			System.exit(0);
 		}
-			//No
+		
 		if(x.equals("N") || x.equals("n")){
 			main.chestprediction();
 		}
