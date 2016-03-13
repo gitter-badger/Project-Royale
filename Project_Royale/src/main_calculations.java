@@ -2,10 +2,12 @@ import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class main_calculations {
+	int h = 0;
 	main_output main = new main_output();
 	
 public String[] chestindex = {
-		"Null",
+		"NULL",
+		"Silver",
 		"Silver",
 		"Silver",
 		"Gold",
@@ -251,49 +253,112 @@ public String[] chestindex = {
 
 
 //Prediction Functions
+	//Calibrate
 		public void ifchestchestskipped(){
 			
 		}
-		
-		//if no chest skipped
-	 public void chestprediction (){
+	
+	//No skipped Chest
+	 public void chestprediction () throws InterruptedException{
+		 int i = 0;
+			while(i  != 75){
+				System.out.println();i++;
+				}
+		 	//Win Input
 		System.out.println("Current Wins:");
 		Scanner r = new Scanner(System.in);
 		int w = r.nextInt();
-		System.out.printf("Chest just Recived ", chestindex[w]);
+			// Confirmation 
+		h++;
+		System.out.print("Chest just Recived ");System.out.printf(chestindex[w]);
 		System.out.println();
-		System.out.println("Is this correct?");
 		System.out.println("Y/N:");
 		Scanner r1 = new Scanner(System.in);
-		int x = r1.nextInt();
-			//Yes
-		if(x == 1){
+		String x = r1.next();
+			
+		if(x.equals("Y") || x.equals("y")){
+			//Logic
 			int e = w+1;
 			int t = w;
 			int y = w;
-			int u = w;
-			while(chestindex[t] != "Gold"){
+			if(chestindex[w].contains("Gold") == true)
+				t++;
+			if(chestindex[w].contains("Magic") == true)
+				y++;
+			while(chestindex[t].contains("Gold") != true){
+				//Debug System.out.println("Gold" + chestindex[y]);
 				t++;
 			}
-			while(chestindex[y] != "Magic"){
+			while(chestindex[y].contains("Magic")!= true){
+				//Debug System.out.println(chestindex[y]);
 				y++;
 			}
-			while(chestindex[u] != "Giant"){
-				u++;
-			}
-			System.out.printf("Next Chest is ", chestindex[e]);
+			int g = t-w;
+			int m = y-w;
+			//Final Output
+			System.out.println("Assuming a chest is never skipped,");
+			System.out.printf("Next Chest is, ");System.out.printf(chestindex[e]);
 			System.out.println();
-			System.out.printf("Next Gold Chest ", chestindex[t], " Wins");
+			System.out.printf("Next Gold Chest is in, ");System.out.print(g);System.out.printf(" Wins ");
 			System.out.println();
-			System.out.printf("Next Magic Chest ", chestindex[y], " Wins");
+			System.out.printf("Next Magic Chest is in, ");System.out.print(m);System.out.printf(" Wins ");
 			System.out.println();
-			System.out.printf("Next Giant Chest ", chestindex[u], " Wins");
+
 			
 		}
-			//No
-		if(x == 0){
-			System.exit(0);
+		
+		if(x.equals("N") || x.equals("n")){
+
+			if(h == 1)
+				chestprediction();
+			if(h == 2)
+				main.chstpre();
+			if(h == 3){
+				int i1 = 0;
+				while(i1  != 75){
+					System.out.println();i1++;
+					}
+				//Confirmation
+		System.out.println("Are you SURE you typed the correct amount of wins? (You Typed: " + w +")");
+		Scanner r11 = new Scanner(System.in);
+			System.out.println("Y/N:");
+			String x1 = r11.next();
+				if(x1.equals("Y") || x1.equals("y")){
+						System.out.println("Are you SURE you never played a game (and won) W/O a open chest slot?");
+					Scanner r111 = new Scanner(System.in);
+						System.out.println("Y/N");
+						String x11 = r111.next();
+								if(x11.equals("Y") || x11.equals("y")){
+							System.out.println("Please check your infomation once more.");
+							chestprediction();
+					}
+								if(x11.equals("N") || x11.equals("n")){
+							System.out.println("Please calibrate the system.");
+							Thread.sleep(3000);
+								System.exit(0);
+							
+							
+						}
+						
+				}
+				if(x1.equals("N") || x1.equals("n")){
+					System.out.println("Please check your infomation once more.");
+					chestprediction();
+				}
+				
+			}
+					if( h == 4 ){
+						System.out.println("Please calibrate the system.");
+						Thread.sleep(3000);
+							System.exit(0);
+					}
+						
+				
+			
+		
+		
 		}
 	}
+
 
 }

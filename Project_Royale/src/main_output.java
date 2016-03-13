@@ -10,7 +10,7 @@ static main_calculations main = new main_calculations();
 
 	//Methods
 		//Menu
-	public static void main_menu(){
+	public static void main_menu() throws InterruptedException{
 		
 		//Selection
 		System.out.println("Project Royale");
@@ -35,8 +35,8 @@ static main_calculations main = new main_calculations();
 	
 	
 	//Director
-	public static void main_director(){
-		//Clear Text
+	public static void main_director() throws InterruptedException{
+		//Clear
 	while(i != 75){
 		System.out.println();i++;
 		}
@@ -50,22 +50,28 @@ static main_calculations main = new main_calculations();
 	}
 }
 	
-	public static void chstpre() {
+	public static void chstpre() throws InterruptedException {
 		// TODO Auto-generated method stub
-		System.out.println("Have you played a game W/O an open chest slot?");
-		System.out.println("Y/N:");
+			//Clear
+		while(i != 75){
+			System.out.println();i++;
+			}
+		System.out.println("Have you skipped a chest?");
 		Scanner r = new Scanner(System.in);
-		int x = r.nextInt();
+		System.out.println("Y/N:");
+		String x = r.next();
 		
 		//Y/N Awnser Decision
 			//Yes
-		if(x == 1){
+		if(x.equals("Y") || x.equals("y")){
 			System.exit(0);
 		}
 			//No
-		if(x == 0){
+		if(x.equals("N") || x.equals("n")){
 			main.chestprediction();
 		}
+		else
+			r.next();
 		
 		
 	}
@@ -73,7 +79,7 @@ static main_calculations main = new main_calculations();
 
 	
 	//initialization of methods 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 				main_menu();
 	}
