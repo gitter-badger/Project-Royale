@@ -1,3 +1,4 @@
+
 /**
  * Class calculates, and makes predictions about upcoming chests.
  */
@@ -368,3 +369,4 @@ public String[] chestindex = {
 
 
 }
+
