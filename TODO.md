@@ -7,8 +7,11 @@
 + Ability to log into Royale account.
 + Move from Text-Base to a Graphical User Interface.
 + Create more tools.
-+ 
-  ##Key
++ Create Wiki
++
+  
+
+##Key
 
   + ~~Done~~
   + **Working On**
