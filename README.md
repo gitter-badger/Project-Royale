@@ -1,4 +1,6 @@
 # Project-Royale
+
+[![Join the chat at https://gitter.im/ArminKaric/Project-Royale](https://badges.gitter.im/ArminKaric/Project-Royale.svg)](https://gitter.im/ArminKaric/Project-Royale?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Royale is aimed to create tool's to help your Clash Royale Experience. It helps you get the best out of your time and
 money while playing the popular game created by SUPERCELL called Clash Royale!
 ##Features
