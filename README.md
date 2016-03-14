@@ -23,7 +23,7 @@ money while playing the popular game created by SUPERCELL called Clash Royale!
   ``` - Returns selection menu.
 + ```
   main_output.main_direct();
-  ``` - Directs user to previously specified tool (Attachment to main_menu();).
+  ``` - Directs user to previously specified tool (Used with main_menu();).
 + ```
   main_output.chstpre();
   ``` - Used to decide if user is to be redirected to basic, or advanced chest prediction.
@@ -36,6 +36,12 @@ money while playing the popular game created by SUPERCELL called Clash Royale!
 + ```
   global.clear();
   ``` - Clears 75 system.out lines.
++ ```
+  global.ANSI_[Color]();
+  ``` - Used to color System.out text, accepted colors in Wiki.
++ ```
+  global.ANSI_RESET();
+  ``` - Reset's to default coloring.
 
 ##Contributors
   - ArminKaric - Lead-Programmer
