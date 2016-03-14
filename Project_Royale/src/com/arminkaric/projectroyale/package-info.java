@@ -9,6 +9,6 @@
 /**
  * @author arminkaric
  * MAJOR.MINOR.PATCH
- * @version 1.9.2
+ * @version 1.10.4
  */
 package com.arminkaric.projectroyale;
