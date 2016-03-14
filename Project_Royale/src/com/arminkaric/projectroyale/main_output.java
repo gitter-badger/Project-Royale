@@ -23,8 +23,8 @@ static global g = new global();
 		//Selection
 		System.out.println("Project Royale");
 		System.out.println();
-		System.out.println("[1] Chest Prediction");
-		System.out.println("[0] Exit");
+		System.out.println(g.ANSI_PURPLE+"[1]"+g.ANSI_YELLOW +"Chest Prediction");
+		System.out.println(g.ANSI_PURPLE+"[0] Exit");
 		Scanner s = new Scanner(System.in);
 			System.out.println("Pick a Number:");
 		int n = s.nextInt();
@@ -56,7 +56,7 @@ static global g = new global();
 	public static void chstpre() throws InterruptedException {
 		// TODO Auto-generated method stub
 		g.clear();
-		System.out.println("Have you skipped a chest?");
+		System.out.println(g.ANSI_RED+"Have you skipped a chest?");
 		Scanner r = new Scanner(System.in);
 		System.out.println("Y/N:");
 		String x = r.next();
