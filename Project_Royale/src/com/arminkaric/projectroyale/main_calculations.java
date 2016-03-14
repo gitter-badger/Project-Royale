@@ -262,8 +262,10 @@ public String[] chestindex = {
 
 //Prediction Functions
 	//Calibrates the system if chests have been skipped
-		public void ifchestchestskipped(){
-			
+		public void ifchestchestskiclear(){
+			g.clear();
+			System.output.println(g.ANSI_RED + "Warning, this isn't the most accurate prediction, it's either on the spot, or completely off. Regularly calibrate to get this as accurate as possible.");
+
 		}
 	
 	//No skipped Chest
